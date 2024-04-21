@@ -1,0 +1,16 @@
+
+//tsconfig.json es un archivos donde hemos especificado las opciones
+  //de compilación del proyecto
+
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2015", //Especifica la versión de ECMAScript (Es el estándar en el que se basa JS)
+    "module": "commonjs", //Especifica el formato de módulo, en este caso commonjs significa que es compatible con entornos Node.js
+    "outDir": "./dist",   //Especifica el directorio donde se van a situar los archivos JS que se creen despues de la compilación
+    "rootDir": "./src", //Especifica el directorio raiz donde van a estar los archivos TypeScript de nuestro proyecto
+    "strict": true, //Habilita opciones de compilación más estrictas, las cuales nos van a ayudar a detectar más errores en el desarrollo 
+    "incremental": true, //Al establecerlo en true se va a reducir la información devuelta por la compilación anterior con el objetivo de tener compilaciones más rápidas 
+    "tsBuildInfoFile": "./buildcache", //Especifica la ubicación donde se va a encontrar el archivo que almacena la información sobre la compilación incremental para reutilizarla en futuras compilaciones
+  }
+}
